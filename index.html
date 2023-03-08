@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset ="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey form</title>
+  <link href="styles.css" rel="stylesheet"/>
+  </head>
+  
+  <body>
+    <h1 id="title">Weclass Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+
+
+<div class="survey-div">
+<form id="survey-form">
+<label id="name-label" class="label1">Name<input id="name" type="text" required placeholder="Name"></label>
+
+<label id="email-label" class="label1">Email<input id="email" type="email" required placeholder="Email"></label>
+
+<label id="number-label" class="label1">Contact Number<input id="number" type="number" required placeholder="Contact Number" min="2" max="3"></label>
+
+<label class="label1">What is your favorite feature of freeCodeCamp?
+<select id="dropdown">
+  <option value=""> Select an option</option>
+  <option value="1">Projects</option>
+  <option value="2">Community</option>
+  </select>
+  </label>
+
+<label class="label1">Would you recommend freeCodeCamp to a friend?</label>
+<label class="inline"><input type="radio" name="recommend" value="1" class="inline">Definitely</label>
+<label class="inline"><input type="radio" name="recommend" value="1" class="inline">Maybe</label>
+<label class="inline"><input type="radio" name="recommend" value="1" class="inline">Not sure</label>
+
+<label class="label1">What would you like to see improved? (Check all that apply)</label>
+<label class="inline"><input type="checkbox" value="improve" class="inline">Challenges</label>
+<label class="inline"><input type="checkbox" value="improve" class="inline">Wiki</label>
+<label class="inline"><input type="checkbox" value="improve" class="inline">Challenges</label>
+<label class="inline"><input type="checkbox" value="improve" class="inline">Wiki</label>
+<label class="inline"><input type="checkbox" value="improve" class="inline">Front-end challenges</label>
+<label class="inline"><input type="checkbox" value="improve" class="inline">Back-end challenges</label>
+
+<label for="suggestion" class="label1"> Any comments or suggestions?
+<textarea id="suggestion" name="suggestion" rows="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+
+<input type="submit" value="Submit" id="submit"/>
+  </form>
+  </div>
+</body>
+</html>
